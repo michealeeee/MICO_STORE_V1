@@ -6,15 +6,19 @@
 html{
     scroll-behavior: smooth;
 }
+
+
   
   header {
     background: linear-gradient(135deg, #020024, #090979, #00d4ff);
     width: 100%;
     top: 0;
     border-radius: 10px;
-    padding: 35px;
+    padding: 20px;
     position: fixed;
     z-index: 20;
+    
+    
 }
 
  header ul{
@@ -28,12 +32,18 @@ text-decoration: none;
 color: white;
 letter-spacing: 0.3rem;
 }
-header .logo img{
+header .logo p{
 height: 5rem;
 left: 10px;
 top: 5px;
-border-radius: 10px;
 position: absolute;
+color: white;
+font-size: larger;
+padding-bottom: 100%;
+cursor: pointer;
+}
+ .logo p:hover{
+    color: red;
 }
 
 header ul a:hover{
@@ -41,7 +51,7 @@ text-decoration: none;
 color: red;
 }
 
-#html{
+#home{
     width: 100%;
     height: 750px;
     background-image: url("https://tse3.mm.bing.net/th/id/OIP.m2H9zVtoHbwXwqQqlVbVTwHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3");
@@ -49,7 +59,7 @@ color: red;
     background-position: center;
     background-size: cover;
 }
-#css{
+#gallery{
     width: 100%;
     height: 750px;
     background-image: url("https://media.geeksforgeeks.org/wp-content/cdn-uploads/CSS.png");
@@ -57,7 +67,7 @@ color: red;
     background-position: center;
     background-size: contain;
 }
-#javascript{
+#contact{
     width: 100%;
     height: 900px;
     background-image: url("https://www.bluejaywebsolutions.com/sites/default/files/2021-08/javascript.jpg");
@@ -81,10 +91,16 @@ footer{
     display: flex;
     gap: 2rem;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 .footer_content p{
     text-align: center;
 }
 
+.footer_content ul:hover{
+    color: red;
+}
 
+.footer_content p:hover{
+    color: red;
+}
