@@ -14,11 +14,9 @@ html{
     width: 100%;
     top: 0;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     position: fixed;
-    z-index: 20;
-    
-    
+    z-index: 20;   
 }
 
  header ul{
@@ -30,7 +28,8 @@ html{
 header ul a{
 text-decoration: none;
 color: white;
-letter-spacing: 0.3rem;
+font-size: 1.5rem;
+font-weight: bold;
 }
 header .logo img{
 height: 5rem;
@@ -89,6 +88,7 @@ footer{
 }
 .footer_content p{
     text-align: center;
+    font-size: 2rem;
 }
 
 
@@ -97,7 +97,18 @@ footer{
     color: azure;
     font-size: 2rem;
     font-weight: bold;
+    position: absolute;
+    bottom: 20px;
 }
 .footer_content a:hover{
+    color: red;
+}
+
+.footer_content a{
+color: white;
+font-size: 2.5rem;
+}
+
+.logo a:hover{
     color: red;
 }
