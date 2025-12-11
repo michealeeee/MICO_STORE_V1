@@ -112,3 +112,54 @@ font-size: 2.5rem;
 .logo a:hover{
     color: red;
 }
+
+.menu_btn {
+    color: white;
+    float: right;
+    font-size: 2rem;
+     display: none; 
+}
+.mobile_menu{
+     position: absolute;
+     display: none;
+    right: 2rem;
+    background-color: #020024;
+    border-radius: 10px;
+    width: 200px;
+    top: 90px;
+    transition: height 9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 0px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+.mobile_menu li{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+   
+}
+
+.mobile_menu.open{
+    height: 300px;
+}
+
+.mobile_menu  li a{
+text-decoration: none;
+color: white;
+display: block;
+}
+
+@media(max-width: 992px){
+    .desktop_menu{
+        display: none;
+    }
+    .menu_btn{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile_menu{
+        display: block;
+    }
+}
+
