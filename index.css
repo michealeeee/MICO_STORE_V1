@@ -127,7 +127,7 @@ font-size: 2.5rem;
     border-radius: 10px;
     width: 200px;
     top: 90px;
-    transition: height 9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 0px;
     backdrop-filter: blur(15px);
     overflow: hidden;
@@ -137,17 +137,26 @@ font-size: 2.5rem;
     padding: 1rem;
     text-align: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
 
-.mobile_menu.open{
-    height: 300px;
+.mobile_menu.open{  
+    height: 160px;
 }
 
 .mobile_menu  li a{
 text-decoration: none;
 color: white;
 display: block;
+padding: 1px 50px;
+}
+.mobile_menu a:hover{
+    color: orange;
+    background: linear-gradient(135deg, #5e829a,#456e89);
+    font-size: 1rem;
+    border-radius: 18px;
 }
 
 @media(max-width: 992px){
