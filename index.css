@@ -122,7 +122,7 @@ font-size: 1.5rem;
      position: absolute;
      display: none;
     right: 2rem;
-    background-color: #020024;
+    background: linear-gradient(135deg, #020024, #090979, #00d4ff);
     border-radius: 10px;
     width: 200px;
     top: 90px;
