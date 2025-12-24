@@ -65,7 +65,7 @@ color: red;
 }
 .mobile_menu li{
     list-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     display: flex;
     align-items: center;

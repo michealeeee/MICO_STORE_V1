@@ -1,6 +1,8 @@
 *{
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: whitesmoke;
@@ -17,17 +19,18 @@ select{
     width: 350px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 12px 15px;
+    padding: 12px 25px;
     color: black;
 }
 .signup{
-    width: 500px;
+    width: 600px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.12);
+    /* background-color: rgba(0, 0, 0, 0.12);  */
     padding: 50px 50px;
     margin-top: 10rem;
     overflow: hidden;
+    background: #ffffff;
 }
 .row{
     display: flex;
@@ -35,11 +38,10 @@ select{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
 }
-.group{
-    width: 600px;
-}
-.row a{
+
+.btn {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
@@ -52,3 +54,15 @@ select{
 .row a:hover{
  background-color: #1F6FCC;  
 }
+hr{
+    border: 1px solid#4A90E2;
+}
+@media(max-width: 992px){
+    .row{
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+
+}
+
