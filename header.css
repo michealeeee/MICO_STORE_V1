@@ -57,11 +57,12 @@ color: red;
     background: linear-gradient(135deg, #020024, #090979, #00d4ff);
     border-radius: 10px;
     width: 200px;
-    top: 90px;
+    top: 95px;
     transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 0px;
     backdrop-filter: blur(15px);
     overflow: hidden;
+    right: 0;
 }
 .mobile_menu li{
     list-style: none;
