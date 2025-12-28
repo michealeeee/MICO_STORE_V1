@@ -6,7 +6,6 @@
 }
 body{
     background-color: whitesmoke;
-
 }
 input{
     outline: none;
@@ -77,10 +76,10 @@ select{
         gap: 0.2rem;
     }
     .form_logo a{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .form_menu a{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
