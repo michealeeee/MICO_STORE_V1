@@ -6,6 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="forms.css">
     <link rel="stylesheet" href="header.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
      <header>
@@ -23,12 +30,13 @@
     <form class="signup" action="">
         <div class="row">
 
-<label>Name:</label>
+<label>Full Name:</label>
+<i class="fa fa-user"></i>
     <input type="text" id="name" name="name" placeholder="Enter your Name" required>
         </div>
     <div class="row">
 <label>Gender:</label>
-   
+ <i id="icon_gender" class="fa fa-transgender"></i>  
 <select name="gender" id="gender">
   <option value="" selected>Select Gender</option>
   <option value="Male" >Male</option> <!-- Male is now default -->
@@ -38,19 +46,21 @@
     </div>
     <div class="row">
  <label>Email:</label>
+ <i class="fa-solid fa-envelope"></i>
     <input type="text" id="email" name="email"  placeholder="email@gmail.com">
     </div>
 <div class="row">
         <label>Mobile No:</label>
+        <i class="fa fa-phone"></i>
     <input  type="tel"  class="Phone" id="phone" name="phone">
     </div>
 <div style="justify-content: center; align-items: center; text-align: center;" >
-    <a href="#" class="btn">Submit</a>
+    <a href="#" class="btn"><i class="fa-solid fa-envelope"></i>Submit</a>
 
 </div>
         
 
     </form>
-    </center>
+    
 </body>
 </html>

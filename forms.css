@@ -51,6 +51,21 @@ select{
     gap: 1rem;
     flex-direction: column;
     margin-bottom: 20px;
+    position: relative;
+}
+.row i{
+    position: absolute;
+    top: 70%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #777;
+}
+#icon_gender{
+    position: absolute;
+    top: 70%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #777;
 }
 
 .btn {
@@ -62,9 +77,13 @@ select{
     padding: 12px 25px;
     color: white;
     cursor: pointer;
+
 }
-.row a:hover{
+.row .btn:hover{
  background-color: #1F6FCC;  
+ transform: translateY(-4px) scale(1.03);
+transition: all 0.3s ease;
+
 }
 
 @media(max-width: 992px){
