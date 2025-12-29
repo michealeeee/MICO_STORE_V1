@@ -6,6 +6,8 @@
 }
 body{
     background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 input{
     outline: none;
@@ -35,7 +37,7 @@ select{
     color: black;
 }
 .signup{
-    width: 100%;
+    width: 600px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     border-radius: 15px;
     /* background-color: rgba(0, 0, 0, 0.12);  */
