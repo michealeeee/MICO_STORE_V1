@@ -1,3 +1,23 @@
+#home{
+    justify-content: center;
+    text-align: center;
+}
+
 .content {
-    margin-top: 7rem;
+    margin-top: 13rem;
+}
+
+.content h1{
+font-size: 4rem;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.content p{
+    font-size: 1.3rem;
+color: whitesmoke;
+margin-top: 9px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
 }
