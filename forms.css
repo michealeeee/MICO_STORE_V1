@@ -104,3 +104,7 @@ transition: all 0.3s ease;
     }
 }
 
+small{
+    color: blue;
+    text-align: right;
+}

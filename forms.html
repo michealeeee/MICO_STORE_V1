@@ -34,6 +34,7 @@
 <label>Full Name:</label>
 <i class="fa fa-user"></i>
     <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+    <small id="fullnameError"></small>
         </div>
     <div class="row">
 <label>Gender:</label>
@@ -43,20 +44,20 @@
   <option value="Male" >Male</option> <!-- Male is now default -->
   <option value="Female">Female</option>
 </select>
-<small id="Gendererror">
-
-</small>
-
+<small id="Gendererror"></small>
     </div>
+
     <div class="row">
  <label>Email:</label>
  <i class="fa-solid fa-envelope"></i>
     <input type="text" id="email" name="email"  placeholder="email@gmail.com">
+    <small id="emailerror"></small>
     </div>
 <div class="row">
         <label>Mobile No:</label>
         <i class="fa fa-phone"></i>
     <input  type="tel"  class="Phone" id="phone" name="phone">
+    <small id="NumberError"></small>
     </div>
 <div style="justify-content: center; align-items: center; text-align: center;" >
     <a href="#" class="btn" onclick="submitForm()"><i class="fa-solid fa-envelope"></i>Submit</a>
