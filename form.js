@@ -1,3 +1,31 @@
+let iti;
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("phone");
+
+  iti = window.intlTelInput(input, {
+    initialCountry: "gh",
+    separateDialCode: true,
+    preferredCountries: ["ng", "gh", "us", "gb"],
+    utilsScript:
+      "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js",
+  });
+});
+
+function check_phone_number(){
+    const NumberError = document.getElementById("NumberError");
+     const phone = document.getElementById("phone");
+    NumberError.innerHTML ="";
+    if(phone.value.trim()===""){
+    NumberError.innerHTML = "Mobile Number cannot be empty";
+    return;
+  }
+    if (!iti.isValidNumber()) {
+    NumberError.innerHTML = "Please enter a valid phone number";
+    return;
+  }
+  
+}
+
 function submitForm(){
     const fullnameError = document.getElementById("fullnameError");
     const name = document.getElementById("name");
@@ -42,9 +70,7 @@ function submitForm(){
      email.focus();
     return;
      }
-     const NumberError = document.getElementById("NumberError");
-     const phone = document.getElementById("phone");
-
+     
      const password = document.getElementById("password");
      const passworderror = document.getElementById("PasswordError")
     const passwordpattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
