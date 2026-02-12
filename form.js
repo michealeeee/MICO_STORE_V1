@@ -18,6 +18,7 @@ function check_phone_number(){
     if(phone.value.trim()===""){
     NumberError.innerHTML = "Mobile Number cannot be empty";
     return;
+    
   }
     if (!iti.isValidNumber()) {
     NumberError.innerHTML = "Please enter a valid phone number";
@@ -105,4 +106,37 @@ function submitForm(){
         return;
     }
 }
+    function view_password(){
+        const password = document.getElementById("password");
+        const attribute = password.getAttribute("type");
+        const eye = document.getElementById("eye");
+        
+        if (attribute === "password"){
+            password.setAttribute("type","text");
+            eye.setAttribute("class","fa-solid fa-eye");
+            return;
+        }
+        if(attribute === "text"){
+            password.setAttribute("type","password");
+            eye.setAttribute("class","fa-solid fa-eye-slash");
+            return;
+        }  
+    }
+
+    function view_password2(){
+        const cpassword = document.getElementById("cpassword");
+        const attribute = cpassword.getAttribute("type");
+        const eye = document.getElementById("eye2");
+
+        if (attribute === "password"){
+            cpassword.setAttribute("type","text");
+            eye.setAttribute("class","fa-solid fa-eye");
+            return;
+        }
+        if(attribute === "text"){
+            cpassword.setAttribute("type","password");
+            eye.setAttribute("class","fa-solid fa-eye-slash");
+            return;
+        }
+    }
 
